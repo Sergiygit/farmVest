@@ -930,9 +930,12 @@ html.light .footer-socials__link {
 
 .page__action {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 7px;
+  right: 7px;
   z-index: 10;
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 html.light .invest__decoration {
@@ -2332,6 +2335,18 @@ html.dark .invest__decoration {
   gap: 24px;
 }
 
+.download__button-app-store {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.download__button-google-play {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
 @media (min-width: 29.99875em) {
   .footer__form {
     position: relative;
@@ -2530,7 +2545,7 @@ html.dark .invest__decoration {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 -15px;
+    margin: 0 -15px 30px;
   }
 }
 
@@ -2982,5 +2997,17 @@ html.dark .invest__decoration {
 
   html.light .button._green:hover {
     background: #23B123;
+  }
+
+  .download__button-app-store:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .download__button-google-play:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
